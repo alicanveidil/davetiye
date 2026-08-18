@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alican & İdil Düğün Davetiyesi</title>
-    <!-- Google Fonts ve FontAwesome (Modern Tasarım İçin) -->
+    <title>Alican & İdil Nişan Davetiyesi</title>
+    <!-- Google Fonts ve FontAwesome (Modern Tasarım İçin Tam Entegrasyon) -->
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="https://cloudflare.com">
     
@@ -55,10 +55,11 @@
         /* Fotoğraf Paylaşım Alanı */
         .upload-section { background-color: #f5f2eb; padding: 80px 20px; border-radius: 20px; margin: 40px 20px; text-align: center; }
         .upload-btn {
-            display: inline-block; padding: 15px 40px; background-color: #4a4a4a; color: white;
+            display: inline-block; padding: 15px 40px; background-color: #25D366; color: white;
             text-decoration: none; border-radius: 30px; font-weight: 600; margin-top: 25px; transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(37,211,102,0.3);
         }
-        .upload-btn:hover { background-color: #2b2b2b; }
+        .upload-btn:hover { background-color: #1ebd58; transform: translateY(-2px); }
 
         /* Animasyonlar */
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -97,7 +98,7 @@
                 Gül - Orhan BULDUK
             </div>
             <div>
-                <strong>Damatın Ailesi</strong>
+                <strong>Damadın Ailesi</strong>
                 Halime - Adem KARADAĞ
             </div>
         </div>
@@ -126,7 +127,7 @@
         </div>
     </section>
 
-    <!-- 4. BÖLÜM: Konum Bilgisi -->
+    <!-- 4. BÖLÜM: Konum Bilgisi (Google Haritalar Entegrasyonu) -->
     <section class="section">
         <h2>Yer & Konum</h2>
         <div class="divider"></div>
@@ -137,18 +138,22 @@
         </a>
     </section>
 
-    <!-- 5. BÖLÜM: Fotoğraf Yükleme Alanı -->
+    <!-- 5. BÖLÜM: Fotoğraf Paylaşım Alanı (WhatsApp Yönlendirmeli) -->
     <section class="section">
         <div class="upload-section">
             <h2>Fotoğraflarınızı Bizimle Paylaşın</h2>
             <div class="divider"></div>
-            <p>Düğün günümüzde çektiğiniz tüm güzel anıları ve videoları aşağıdaki butona tıklayarak doğrudan bizimle paylaşabilirsiniz.</p>
-            <a href="#" class="upload-btn"><i class="fa-solid fa-cloud-arrow-up"></i> Fotoğraf Yükle</a>
+            <p>Nişan günümüzde çektiğiniz tüm güzel anıları ve videoları aşağıdaki butona tıklayarak doğrudan WhatsApp üzerinden bizimle paylaşabilirsiniz.</p>
+            
+            <!-- ÖNEMLİ: Aşağıdaki 905XXXXXXXXXX kısmını kendi numaranızla değiştirin (Örn: 905321234567) -->
+            <a href="https://" target="_blank" class="upload-btn">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp ile Gönder
+            </a>
         </div>
     </section>
 
     <footer style="text-align: center; padding: 40px; font-size: 0.8rem; color: #999; letter-spacing: 2px;">
-        A & İ • 30.08.2026
+        A & İ • 13.09.2026
     </footer>
 
 </body>
